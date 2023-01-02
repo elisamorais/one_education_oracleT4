@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha () {
+    document.write('<br>');
+}
+
+var idadeCarlos = 18;
+var idadeAna = 15;
+var diferençaIdade = idadeCarlos - idadeAna; //não deveria ter criado outra variavel para fazer
+                                            //o cálculo, poderia ter feito dentro da frase i - i
+
+
+function mostra(frase){
+    
+    document.write(frase);
+    pulaLinha(); // não deveria ter chamado a pulaLinha aqui
+}
+
+mostra('A idade do Carlos é 18 anos.')
+mostra('A idade da Ana é 15 anos.')
+mostra('Nossa diferença de idade é ' + diferençaIdade + ' anos.'); 
+
+//deveria ter chamado a função mostra uma vez só e só com a frase informando a diferença das idades.
+//usando a precedência de parênteses. 
+
+//*** CÓDIGO COM A RESPOSTA ****
+
+  function pulaLinha() {
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+    document.write(frase);
+  }
+  var minhaIdade = 18;
+  var idadeIrmao = 15;
+  mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrmao));
+  pulaLinha();
+
+
+</script>

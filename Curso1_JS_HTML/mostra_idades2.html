@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write('<br><hr><br>');
+    }
+
+    function mostra (frase) {
+        document.write('<big>' + frase + '</big>');
+        pulaLinha();
+    }
+
+    var ano = 2019;
+
+
+    //o <big> era pra ter sido passado dentro do parametro do document.write da função
+    mostra('<big>Eu nasci em : </big>' +'<big>' +  (ano - 25) + '</big>');
+    mostra('<big>Adriano nasceu em : </big>' + '<big>' +  (ano - 26) + '</big>');
+    mostra('<big>Paulo nasceu em : </big>' + '<big>' + (ano - 32) + '</big>');
+
+</script>
