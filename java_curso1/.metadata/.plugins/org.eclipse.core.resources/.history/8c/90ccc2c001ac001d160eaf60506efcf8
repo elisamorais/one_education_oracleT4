@@ -1,0 +1,14 @@
+package sintaxe_variaveis_e_fluxo;
+
+public class ErroClarice {
+	
+	while (contador <= 10) {
+		public static void main(String[] args) {
+			int contador = 1;            
+	        System.out.println(contador);
+	        contador++;
+			
+		}
+        
+    }
+
